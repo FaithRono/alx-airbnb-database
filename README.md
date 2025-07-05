@@ -29,7 +29,7 @@ This project is part of the **ALX Airbnb Database Module**, where I applied **ad
 
 ## 🗂️ Project Structure
 
-
+---
 alx-airbnb-database/
 └── database-adv-script/
     ├── joins_queries.sql                  # Task 0: Complex join queries
@@ -43,7 +43,7 @@ alx-airbnb-database/
     ├── partition_performance.md           # Task 5: Partitioning results
     ├── performance_monitoring.md          # Task 6: Monitoring report
     └── README.md                          # This file
-
+---
 
 ## 🧪 Task Breakdown & Solutions
 
