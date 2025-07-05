@@ -29,21 +29,18 @@ This project is part of the **ALX Airbnb Database Module**, where I applied **ad
 
 ## 🗂️ Project Structure
 
----
-alx-airbnb-database/
-└── database-adv-script/
-    ├── joins_queries.sql                  # Task 0: Complex join queries
-    ├── subqueries.sql                     # Task 1: Subqueries
-    ├── aggregations_and_window_functions.sql  # Task 2: Aggregations
-    ├── database_index.sql                 # Task 3: Index creation
-    ├── index_performance.md               # Task 3: Index impact report
-    ├── performance.sql                    # Task 4: Complex query
-    ├── optimization_report.md             # Task 4: Optimization summary
-    ├── partitioning.sql                   # Task 5: Table partitioning
-    ├── partition_performance.md           # Task 5: Partitioning results
-    ├── performance_monitoring.md          # Task 6: Monitoring report
-    └── README.md                          # This file
----
+- `joins_queries.sql` – Task 0: Complex join queries  
+- `subqueries.sql` – Task 1: Subqueries  
+- `aggregations_and_window_functions.sql` – Task 2: Aggregation and window functions  
+- `database_index.sql` – Task 3: SQL statements for index creation  
+- `index_performance.md` – Task 3: Report analyzing index impact  
+- `performance.sql` – Task 4: Original complex query before optimization  
+- `optimization_report.md` – Task 4: Optimization improvements and results  
+- `partitioning.sql` – Task 5: Table partitioning implementation  
+- `partition_performance.md` – Task 5: Partitioning performance results  
+- `performance_monitoring.md` – Task 6: Query monitoring and performance improvements  
+- `README.md` – This documentation file
+
 
 ## 🧪 Task Breakdown & Solutions
 
