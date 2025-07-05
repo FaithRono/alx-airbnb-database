@@ -10,6 +10,7 @@ INNER JOIN users u ON b.user_id = u.id;
 SELECT p.id AS property_id, p.name AS property_name, r.rating, r.comment
 FROM properties p
 LEFT JOIN reviews r ON p.id = r.property_id;
+ORDER BY p.id;
 
 -- FULL OUTER JOIN: All users and all bookings (PostgreSQL syntax)
 SELECT u.id AS user_id, u.name, b.id AS booking_id, b.property_id
