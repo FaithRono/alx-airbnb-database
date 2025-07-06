@@ -1,25 +1,18 @@
--- ===============================
--- Task 3: Implement Indexes for Optimization
--- ===============================
+-- Task 3: Indexing for Optimization
+-- ---------------------------------
 
--- Create indexes on frequently queried columns to improve performance
-
--- Index for user_id in bookings (used in JOINs and WHERE clauses)
+-- Create indexes on commonly filtered or joined columns
+-- These improve lookup speed significantly
 CREATE INDEX idx_user_id ON bookings(user_id);
-
--- Index for property_id in bookings (used in JOINs and aggregations)
 CREATE INDEX idx_property_id ON bookings(property_id);
-
--- Index for check_in date (used in WHERE range queries and partitioning)
 CREATE INDEX idx_check_in ON bookings(check_in);
-
--- Index for property_id in reviews (used to join properties and reviews)
 CREATE INDEX idx_property_review ON reviews(property_id);
 
--- Analyze performance using EXPLAIN before and after indexing
-
--- BEFORE indexing (will likely do a full table scan)
+-- Measure performance before and after indexing using EXPLAIN
+-- This provides insights into whether the indexes are being used
+-- and how query performance changes
+-- BEFORE indexing
 EXPLAIN SELECT * FROM bookings WHERE user_id = 2;
 
--- AFTER indexing (should use idx_user_id)
+-- AFTER indexing (repeat same query to compare)
 EXPLAIN SELECT * FROM bookings WHERE user_id = 2;
